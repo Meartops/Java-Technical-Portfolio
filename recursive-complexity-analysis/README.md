@@ -42,13 +42,14 @@ Uses a sliding window of the four most recent values passed as parameters. While
 
 Measured using `System.nanoTime()`.
 
-| n   | Naive Recursion | Memoized | Tail-Recursive |
-|-----|------------------|----------|----------------|
-| 5   | 0 ms             | 0 ms     | 0 ms           |
-| 20  | 1 ms             | 0 ms     | 0 ms           |
-| 25  | 24 ms            | 0 ms     | 0 ms           |
-| 30  | 499 ms           | 0 ms     | 0 ms           |
-| 200 | Infeasible       | <1 ms    | <1 ms          |
+| n  | Naive Recursion | Memoized | Tail-Recursive |
+|----|------------------|----------|----------------|
+| 5  | 1,781,700 ns     | 339,200 ns | 309,500 ns |
+| 20 | 2,373,400 ns     | 6,800 ns   | 3,300 ns |
+| 25 | 50,107,400 ns    | 19,300 ns  | 4,800 ns |
+| 30 | 374,845,500 ns   | 31,400 ns  | 4,000 ns |
+| 200| Infeasible       | <1 ms      | <1 ms      |
+
 
 ---
 
