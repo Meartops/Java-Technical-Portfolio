@@ -32,7 +32,7 @@ Introduces a caching layer using a `BigInteger[]` array to store previously comp
 
 ### 3. Tail-Recursive Design  
 **Time Complexity:** O(n)  
-**Space Complexity:** O(n) (JVM-dependent)
+**Space Complexity:** O(n) 
 
 Uses a sliding window of the four most recent values passed as parameters. While logically iterative, Java does not support Tail Call Optimization, so stack usage remains linear.
 
